@@ -1,19 +1,14 @@
-import React from "react";
-import './ValueWithTitle.css';
+import React from 'react'
+import './ValueWithTitle.css'
 
-class ValueWithTitle extends React.Component {
-    render() {
-        return (
-            <div className="ValueWithTitle">
-                <div className="ValueWithTitle__title">
-                    {this.props.title}
-                </div>
-                <div className="ValueWithTitle__value">
-                    {this.props.value}
-                </div>
-            </div>
-        );
-    }
+const ValueWithTitle = props => {
+	const { title, value } = props
+	return (
+		<div className='ValueWithTitle'>
+			<div className='ValueWithTitle__title'>{title}</div>
+			<div className='ValueWithTitle__value'>{value}</div>
+		</div>
+	)
 }
 
-export default ValueWithTitle;
+export default ValueWithTitle
